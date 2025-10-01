@@ -1,0 +1,16 @@
+# Virtual Environment
+venv/
+
+# File sesi login Pyrogram (SANGAT RAHASIA)
+*.session
+*.session-journal
+
+# File environment (BERISI KUNCI API)
+.env
+
+# Database
+database/*.db
+
+# Cache Python
+__pycache__/
+*.pyc
