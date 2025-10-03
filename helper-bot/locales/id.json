@@ -1,0 +1,22 @@
+{
+    "help_main_title": "Buka Menu Bantuan",
+    "help_main_desc": "Menampilkan menu bantuan interaktif.",
+    "help_main_text": "<b>Menu Bantuan Userbot</b>\n\nBerikut adalah perintah yang tersedia:",
+    "back_button": "⬅️ Kembali",
+    "lang_button": "🇬🇧 Change Language",
+    "ping_button": "⚡️ Ping",
+    "info_button": "👤 Info Pengguna",
+    "lang_userbot_button": "🌐 Bahasa",
+    "stats_button": "📊 Statistik",
+    "joinvc_button": "▶️ Gabung VC",
+    "leavevc_button": "⏹️ Keluar VC",
+    "purge_button": "🧹 Bersihkan",
+    "afk_button": "💤 AFK",
+    "bc_button": "📢 Broadcast",
+    "pfp_button": "🖼️ PFP",
+    "steal_button": "🔐 Curi Stiker",
+    "ai_button": "🤖 Obrolan AI",
+    "crypto_button": "🪙 Kripto",
+    "ping_detail": "<b>⚡️ Ping</b>\n\nMemeriksa apakah userbot responsif.\n\n<b>Penggunaan:</b> <code>.ping</code>",
+    "info_detail": "<b>👤 Info Pengguna</b>\n\nMendapatkan informasi detail tentang pengguna.\n\n<b>Penggunaan:</b> <code>.info</code> (balas) atau <code>.info &lt;id/username&gt;</code>"
+}

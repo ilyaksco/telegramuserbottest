@@ -1,0 +1,9 @@
+# Virtual Environment
+venv/
+
+# File environment (BERISI BOT TOKEN)
+.env
+
+# Cache Python
+__pycache__/
+*.pyc

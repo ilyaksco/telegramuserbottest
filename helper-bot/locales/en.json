@@ -1,0 +1,22 @@
+{
+    "help_main_title": "Open Help Menu",
+    "help_main_desc": "Displays the interactive help menu.",
+    "help_main_text": "<b>Userbot Help Menu</b>\n\nHere are the available commands:",
+    "back_button": "⬅️ Back",
+    "lang_button": "🇮🇩 Ganti Bahasa",
+    "ping_button": "⚡️ Ping",
+    "info_button": "👤 User Info",
+    "lang_userbot_button": "🌐 Language",
+    "stats_button": "📊 Stats",
+    "joinvc_button": "▶️ Join VC",
+    "leavevc_button": "⏹️ Leave VC",
+    "purge_button": "🧹 Purge",
+    "afk_button": "💤 AFK",
+    "bc_button": "📢 Broadcast",
+    "pfp_button": "🖼️ PFP",
+    "steal_button": "🔐 Steal Sticker",
+    "ai_button": "🤖 AI Chat",
+    "crypto_button": "🪙 Crypto",
+    "ping_detail": "<b>⚡️ Ping</b>\n\nChecks if the userbot is responsive.\n\n<b>Usage:</b> <code>.ping</code>",
+    "info_detail": "<b>👤 User Info</b>\n\nGets detailed information about a user.\n\n<b>Usage:</b> <code>.info</code> (reply) or <code>.info &lt;id/username&gt;</code>"
+}

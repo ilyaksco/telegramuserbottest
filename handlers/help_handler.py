@@ -1,19 +1,29 @@
+import os
+import logging
 from pyrogram import Client, filters
 from pyrogram.types import Message
-from pyrogram.enums import ParseMode
 
-from localization import LocalizationManager
-
-def register_help_handler(app: Client, locales: LocalizationManager, user_settings: dict):
+def register_help_handler(app: Client, locales, user_settings):
     @app.on_message(filters.command("help", prefixes=".") & filters.me)
     async def help_command(client: Client, message: Message):
-        lang = user_settings.get("lang", "en")
         
-        # Ambil teks bantuan yang sudah diformat
-        response_text = locales.get_text(lang, "help_text")
-        
-        await message.edit_text(
-            response_text,
-            parse_mode=ParseMode.HTML,
-            disable_web_page_preview=True
-        )
+        HELPER_BOT_USERNAME = os.getenv("HELPER_BOT_USERNAME")
+        await message.delete()
+
+        if not HELPER_BOT_USERNAME:
+            await client.send_message(message.chat.id, "`HELPER_BOT_USERNAME` not set in .env")
+            return
+
+        try:
+            # Panggil helper bot secara inline
+            results = await client.get_inline_bot_results(HELPER_BOT_USERNAME)
+            
+            # Kirim hasilnya
+            await client.send_inline_bot_result(
+                chat_id=message.chat.id,
+                query_id=results.query_id,
+                result_id=results.results[0].id
+            )
+        except Exception as e:
+            logging.error(f"An unknown error occurred in .help: {e}", exc_info=True)
+            await client.send_message(message.chat.id, f"Could not fetch help menu. Error: {e}")
