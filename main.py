@@ -4,6 +4,8 @@ from dotenv import load_dotenv
 
 from pyrogram import Client
 from pytgcalls import GroupCallFactory
+from groq import AsyncGroq # <-- DIUBAH: Impor dari groq
+
 
 from handlers import register_all_handlers
 from localization import LocalizationManager
@@ -19,6 +21,9 @@ logging.basicConfig(
 
 db_manager = DatabaseManager()
 db_manager.setup_database()
+
+groq_client = AsyncGroq()
+
 
 API_ID = os.getenv("API_ID")
 API_HASH = os.getenv("API_HASH")
@@ -38,7 +43,7 @@ app = Client(
 group_call_factory = GroupCallFactory(app)
 group_call = group_call_factory.get_group_call()
 
-register_all_handlers(app, group_call, locales, user_settings, db_manager)
+register_all_handlers(app, group_call, locales, user_settings, db_manager, groq_client)
 
 if __name__ == "__main__":
     logging.info("starting userbot...")

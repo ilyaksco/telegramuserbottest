@@ -12,7 +12,7 @@
     "join_vc_failed_floodwait": "<b>Flood Wait</b>\nTelegram has restricted this action. Please wait {seconds} seconds before trying again.",
     "leaving_vc": "Leaving voice chat...",
     "leave_vc_success": "Successfully left the voice chat.",
-    "help_text": "<b>Userbot Help Menu</b>\n\n<b>GENERAL</b>\n<code>.help</code> - Shows this help message.\n<code>.ping</code> - Checks if the userbot is alive.\n<code>.info</code> - Gets user information.\n<code>.lang</code> - Changes the bot's language.\n<code>.stats</code> - Shows system statistics.\n<code>.afk</code> - Sets an AFK status.\n<code>.pfp</code> - Downloads user's profile pictures.\n\n<b>VOICE CHAT</b>\n<code>.joinvc</code> - Joins the group voice chat.\n<code>.leavevc</code> - Leaves the group voice chat.\n\n<b>MODERATION</b>\n<code>.purge</code> - Deletes messages in bulk.\n\n<b>BROADCAST</b>\n<code>.bc</code> - Broadcasts a replied message.\n<code>.excludebc</code> - Excludes a group from broadcast.\n<code>.includebc</code> - Includes a group for broadcast.",
+    "help_text": "<b>Userbot Help Menu</b>\n\n<b>GENERAL</b>\n<code>.help</code> - Shows this help message.\n<code>.ping</code> - Checks if the userbot is alive.\n<code>.info</code> - Gets user information.\n<code>.lang</code> - Changes the bot's language.\n<code>.stats</code> - Shows system statistics.\n<code>.afk</code> - Sets an AFK status.\n<code>.pfp</code> - Downloads user's profile pictures.\n\n<b>UTILITIES</b>\n<code>.crypto</code> - Fetches cryptocurrency prices.\n\n<b>VOICE CHAT</b>\n<code>.joinvc</code> - Joins the group voice chat.\n<code>.leavevc</code> - Leaves the group voice chat.\n\n<b>MODERATION</b>\n<code>.purge</code> - Deletes messages in bulk.\n\n<b>BROADCAST</b>\n<code>.bc</code> - Broadcasts a replied message.\n<code>.excludebc</code> - Excludes a group from broadcast.\n<code>.includebc</code> - Includes a group for broadcast.",
     "purge_start": "🧹 Purging messages...",
     "purge_success": "✅ Purge successful. Deleted {count} messages.",
     "purge_no_reply": "❗️ Please reply to a message to start purging.",
@@ -29,6 +29,22 @@
     "pfp_fetching": "🔎 Fetching profile photos...",
     "pfp_no_photos": "🤷‍♂️ This user has no profile photos.",
     "pfp_caption": "📸 Profile photo for {full_name}\nFile: {file_name}",
-    "pfp_user_not_found": "❗️ User not found."
+    "pfp_user_not_found": "❗️ User not found.",
+    "crypto_fetching_detailed": "📊 Fetching detailed crypto data...",
+    "crypto_detail_template": "<b>{name} ({symbol})</b>\n\n🇺🇸 <b>USD Price:</b> <code>${price_usd}</code>\n🇮🇩 <b>IDR Price:</b> <code>Rp {price_idr}</code>\n\n<b>24h Change:</b> <code>{change_24h}%</code>\n<b>24h High:</b> <code>${high_24h}</code>\n<b>24h Low:</b> <code>${low_24h}</code>\n<b>Volume (24h):</b> <code>${volume_24h}</code>\n<b>Market Cap:</b> <code>${market_cap}</code>",
+    "crypto_not_found_detailed": "❓ Couldn't find detailed data for: {symbols}",
+    "crypto_cooldown": "⏳ You are making requests too quickly. Please wait {seconds} more seconds.",
+    "steal_no_reply": "❗️ Please reply to a sticker to steal it.",
+    "steal_in_progress": "😏 Stealing this sticker...",
+    "steal_success": "✅ Sticker successfully stolen and added to your pack!",
+    "steal_failed": "❌ Failed to steal sticker. Check the logs for details.",
+    "ai_on": "🤖 AI chat has been **enabled** in this chat.",
+    "ai_off": "😴 AI chat has been **disabled** in this chat.",
+    "ai_new_chat": "🧹 AI conversation history for this chat has been cleared.",
+    "ai_thinking": "🤔 AI is thinking...",
+    "ai_prompt_set": "✅ AI system prompt for this chat has been updated.",
+    "ai_prompt_cleared": "🗑️ AI system prompt for this chat has been cleared.",
+    "ai_prompt_usage": "Usage: `.prompt <your system prompt here>`\nLeave empty to clear."
+
 
 }
